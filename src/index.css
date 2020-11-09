@@ -1,0 +1,52 @@
+.logo {
+  float: left;
+  margin-left: 16px;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
+  font-weight: 1000;
+  height: 36px;
+}
+
+.landing-header {
+  height: 2vh;
+  border-bottom: 10px solid #000c17;
+}
+
+.content-1 {
+  height: 95vh;
+  background-color: aqua;
+}
+
+.content-2 {
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.content-3 {
+  height: 100vh;
+  background-color: blue;
+}
+
+.section1-text {
+  position: absolute;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
+  padding-bottom: 5em;
+}
+
+.title-text {
+  font-weight: 800;
+  font-size: 5em;
+  margin-bottom: 0px;
+}
+
+.title-subtext {
+  font-weight: 10;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}

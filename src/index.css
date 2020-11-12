@@ -11,19 +11,10 @@
   border-bottom: 10px solid #000c17;
 }
 
-.content-1 {
+.content {
   height: 95vh;
-  background-color: aqua;
-}
-
-.content-2 {
-  height: 100vh;
-  background-color: aquamarine;
-}
-
-.content-3 {
-  height: 100vh;
-  background-color: blue;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .section1-text {
@@ -49,4 +40,24 @@
   font-weight: 10;
   font-size: 1.5em;
   margin-bottom: 0px;
+}
+
+.section-header {
+  font-weight: 800;
+  font-size: 3em;
+  text-align: center;
+}
+
+.projects-column {
+  margin: auto;
+}
+
+.text-section {
+  padding: 2em;
+}
+
+.section-subtext {
+  font-weight: 900;
+  font-size: 1.5em;
+  text-align: center;
 }

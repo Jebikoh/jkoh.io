@@ -1,5 +1,5 @@
 import React from 'react';
-import {Layout, Menu, Affix} from 'antd';
+import {Layout, Menu, Affix, Row, Col, Timeline, Card} from 'antd';
 import {
   GithubOutlined,
   TwitterOutlined,
@@ -79,7 +79,7 @@ function App() {
             </Menu>
           </Affix>
         </Layout.Header>
-        <Layout.Content className="content-1">
+        <Layout.Content className="content">
           <div className="section1-text">
             <p className="title-text">HEY, I&apos;M JADEN.</p>
             <p className="title-subtext">
@@ -167,14 +167,46 @@ function App() {
             }}
           />
         </Layout.Content>
-        <Layout.Content className="content-2">
-          <div className="site-layout-content">Content</div>
+        <Layout.Content className="content text-section">
+          <p className="section-header">About Me</p>
         </Layout.Content>
-        <Layout.Content className="content-3">
-          <div className="site-layout-content">Content</div>
+        <Layout.Content className="content text-section">
+          <p className="section-header">My Projects</p>
+          <Row gutter={16}>
+            <Col className="projects-column" span={12}>
+              <p className="section-subtext">Primary</p>
+              {/* <Card
+                title="Default size card"
+                extra={<a href="#">More</a>}
+                style={{width: 300, marginBottom: 10}}
+              >
+                <p>Card content</p>
+                <p>Card content</p>
+                <p>Card content</p>
+              </Card>
+              <Card
+                title="Default size card"
+                extra={<a href="#">More</a>}
+                style={{width: 300}}
+              >
+                <p>Card content</p>
+                <p>Card content</p>
+                <p>Card content</p>
+              </Card> */}
+            </Col>
+            <Col className="projects-column" span={12}>
+              <p className="section-subtext">Past</p>
+              {/* <Timeline>
+                <Timeline.Item>1</Timeline.Item>
+                <Timeline.Item>2</Timeline.Item>
+                <Timeline.Item>3</Timeline.Item>
+                <Timeline.Item>4</Timeline.Item>
+              </Timeline> */}
+            </Col>
+          </Row>
         </Layout.Content>
         <Layout.Footer style={{textAlign: 'center'}}>
-          Ant Design ©2018 Created by Ant UED
+          Jaden Edara ©2020
         </Layout.Footer>
       </Layout>
     </div>

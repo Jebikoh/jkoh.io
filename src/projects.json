@@ -1,0 +1,19 @@
+{
+
+  "Projects": [
+    {
+      "name": "Delphus",
+      "href": "https://delph.us",
+      "image": "https://i.imgur.com/SEnhHsR.png",
+      "description": "🔬 Secure, decentralized, and open scientific study management platform. Using the blockchain, Delphus immutably timestamps and records all consent and data points to provide transparency at every step. It stores data on a network of servers around the world, preserving data accessibility and allowing control on a per-site and per-investigator basis. This makes research auditable and verifiable, saving trust, time, and money",
+      "meta": "Typescript, React, Ethereum"
+    },
+    {
+      "name": "JKOH.io",
+      "href": "https://jkoh.io",
+      "image": "https://i.imgur.com/62FYhzE.png",
+      "description": "This website.",
+      "meta": "Typescript, React"
+    }
+  ]
+}

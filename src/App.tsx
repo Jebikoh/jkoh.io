@@ -1,5 +1,5 @@
 import React from 'react';
-import {Layout, Menu, Affix, Row, Col, Timeline, Card} from 'antd';
+import {Layout, Menu, Affix, Row, Col, Timeline, Card, List} from 'antd';
 import {
   GithubOutlined,
   TwitterOutlined,
@@ -9,7 +9,14 @@ import Particles from 'react-tsparticles';
 import styled, {keyframes} from 'styled-components';
 
 import './index.css';
-// import 'antd/dist/antd.less';
+import projects from './projects.json';
+import Project from './Project';
+
+const listData: Project[] = [];
+
+projects.Projects.forEach(project => {
+  listData.push(project);
+});
 
 const ChevronContainer = styled.div`
   position: absolute;
@@ -170,40 +177,25 @@ function App() {
         <Layout.Content className="content text-section">
           <p className="section-header">About Me</p>
         </Layout.Content>
-        <Layout.Content className="content text-section">
+        <Layout.Content className="content text-section project-section">
           <p className="section-header">My Projects</p>
-          <Row gutter={16}>
-            <Col className="projects-column" span={12}>
-              <p className="section-subtext">Primary</p>
-              {/* <Card
-                title="Default size card"
-                extra={<a href="#">More</a>}
-                style={{width: 300, marginBottom: 10}}
+          <List
+            itemLayout="vertical"
+            size="large"
+            dataSource={listData}
+            renderItem={item => (
+              <List.Item
+                key={item.name}
+                extra={<img width={128} alt="logo" src={item.image} />}
               >
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
-              </Card>
-              <Card
-                title="Default size card"
-                extra={<a href="#">More</a>}
-                style={{width: 300}}
-              >
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
-              </Card> */}
-            </Col>
-            <Col className="projects-column" span={12}>
-              <p className="section-subtext">Past</p>
-              {/* <Timeline>
-                <Timeline.Item>1</Timeline.Item>
-                <Timeline.Item>2</Timeline.Item>
-                <Timeline.Item>3</Timeline.Item>
-                <Timeline.Item>4</Timeline.Item>
-              </Timeline> */}
-            </Col>
-          </Row>
+                <List.Item.Meta
+                  title={<a href={item.href}>{item.name}</a>}
+                  description={item.meta}
+                />
+                {item.description}
+              </List.Item>
+            )}
+          />
         </Layout.Content>
         <Layout.Footer style={{textAlign: 'center'}}>
           Jaden Edara ©2020

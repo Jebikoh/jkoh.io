@@ -1,5 +1,5 @@
 import React from 'react';
-import {Layout, Menu, Affix, Row, Col, Timeline, Card, List} from 'antd';
+import {Layout, Menu, Affix, List} from 'antd';
 import {
   GithubOutlined,
   TwitterOutlined,

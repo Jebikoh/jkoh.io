@@ -6,9 +6,8 @@
   height: 36px;
 }
 
-.landing-header {
-  height: 2vh;
-  border-bottom: 10px solid #000c17;
+.nav {
+  border: 10px solid #000000;
 }
 
 .content {
@@ -32,7 +31,7 @@
 
 .title-text {
   font-weight: 800;
-  font-size: 5em;
+  font-size: 80px;
   margin-bottom: 0px;
 }
 
@@ -67,4 +66,9 @@
 .project-section {
   padding-left: 16em;
   padding-right: 16em;
+}
+
+.particles {
+  height: 100%;
+  width: 100%;
 }

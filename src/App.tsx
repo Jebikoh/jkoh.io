@@ -7,6 +7,7 @@ import {
 } from '@ant-design/icons';
 import Particles from 'react-tsparticles';
 import styled, {keyframes} from 'styled-components';
+import {Helmet} from 'react-helmet';
 
 import './index.css';
 import projects from './projects.json';
@@ -66,14 +67,16 @@ const Chevron = styled.i`
 function App() {
   return (
     <div className="App">
-      <Layout className="layout">
-        <Layout.Header className="landing-header">
-          <Affix offsetTop={0}>
+      <Helmet>
+        <title>JKOH.io</title>
+      </Helmet>
+      <Layout>
+        <Affix>
+          <Layout.Header>
             <div className="logo">
               <p>JEBIKOH</p>
             </div>
             <Menu theme="dark" mode="horizontal">
-              {/* <div className="logo">JEBIKOH</div> */}
               <Menu.Item style={{float: 'right'}} key="1">
                 <GithubOutlined />
               </Menu.Item>
@@ -84,8 +87,8 @@ function App() {
                 <TwitterOutlined />
               </Menu.Item>
             </Menu>
-          </Affix>
-        </Layout.Header>
+          </Layout.Header>
+        </Affix>
         <Layout.Content className="content">
           <div className="section1-text">
             <p className="title-text">HEY, I&apos;M JADEN.</p>
@@ -102,6 +105,7 @@ function App() {
           </div>
           <Particles
             id="tsparticles"
+            className="particles"
             options={{
               background: {
                 color: {

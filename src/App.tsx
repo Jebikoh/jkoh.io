@@ -68,30 +68,44 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>JKOH.io</title>
+        <title>Jayden // JKOH</title>
       </Helmet>
       <Layout>
         <Affix>
-          <Layout.Header>
+          <Layout.Header className="nav">
             <div className="logo">
               <p>JEBIKOH</p>
             </div>
             <Menu theme="dark" mode="horizontal">
               <Menu.Item style={{float: 'right'}} key="1">
-                <GithubOutlined />
+                <a
+                  href="https://github.com/Jebikoh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GithubOutlined style={{margin: 0}} />
+                </a>
               </Menu.Item>
               <Menu.Item style={{float: 'right'}} key="2">
+                {/* <a href="https://www.linkedin.com/in/aneesh-edara/"> */}
                 <LinkedinOutlined />
+                {/* </a> */}
               </Menu.Item>
               <Menu.Item style={{float: 'right'}} key="3">
-                <TwitterOutlined />
+                <a
+                  href="https://twitter.com/jebikoh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TwitterOutlined style={{margin: 0}} />
+                </a>
               </Menu.Item>
             </Menu>
           </Layout.Header>
         </Affix>
         <Layout.Content className="content">
           <div className="section1-text">
-            <p className="title-text">HEY, I&apos;M JADEN.</p>
+            <p className="title-text">HEY, I&apos;M JAYDEN.</p>
             <p className="title-subtext">
               You might have seen me as &quot;Jebikoh&quot;
             </p>
@@ -170,8 +184,8 @@ function App() {
                   type: 'circle',
                 },
                 size: {
-                  random: true,
-                  value: 5,
+                  random: false,
+                  value: 2,
                 },
               },
               detectRetina: true,

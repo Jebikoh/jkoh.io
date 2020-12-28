@@ -1,9 +1,10 @@
 import React from 'react';
-import {Layout, Menu, Affix, List} from 'antd';
+import {Layout, Menu, Affix, List, Avatar} from 'antd';
 import {
   GithubOutlined,
   TwitterOutlined,
   LinkedinOutlined,
+  UserOutlined,
 } from '@ant-design/icons';
 import Particles from 'react-tsparticles';
 import styled, {keyframes} from 'styled-components';
@@ -193,7 +194,27 @@ function App() {
           />
         </Layout.Content>
         <Layout.Content className="content text-section">
-          <p className="section-header">About Me</p>
+          <div className="content-center">
+            <p className="section-header">About Me</p>
+            <Avatar
+              size={192}
+              icon={<UserOutlined />}
+              style={{margin: 'auto', marginBottom: '0.5em'}}
+            />
+            <p className="about-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              nec ante ac massa ultricies vestibulum. Aliquam tempor neque et
+              enim pharetra tempus. Suspendisse potenti. Nunc eu velit mi.
+              Phasellus ut felis id odio convallis sodales. Donec sit amet lacus
+              et ante egestas lacinia vel sed tortor. Curabitur fringilla justo
+              at mi auctor, at vulputate dolor suscipit. Maecenas vitae sem eu
+              risus euismod aliquet. Curabitur efficitur hendrerit purus, vel
+              interdum ligula. Mauris ac ex eu dolor sodales iaculis. Ut
+              molestie sagittis dolor, quis luctus odio dictum in. Vivamus vel
+              efficitur augue. Sed vitae pretium velit. Praesent nec eros ut
+              elit vulputate pretium. In id erat odio.
+            </p>
+          </div>
         </Layout.Content>
         <Layout.Content className="content text-section project-section">
           <p className="section-header">My Projects</p>

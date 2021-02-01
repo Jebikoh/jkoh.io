@@ -75,7 +75,7 @@ function App() {
         <Affix>
           <Layout.Header className="nav">
             <div className="logo">
-              <p>JAYDEN</p>
+              <p>LOGO TEXT</p>
             </div>
             <Menu theme="dark" mode="horizontal">
               <Menu.Item style={{float: 'right'}} key="1">

@@ -1,99 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-
-.logo {
-  float: left;
-  margin-left: 16px;
-  font-family: 'Roboto',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-  font-weight: 900;
-  height: 36px;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.nav {
-  /* border: 10px solid #000000;
-  outline: black 1px; */
-  outline: 1px solid #cecece;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
-
-.content {
-  height: 95vh;
-  background-color: #fff;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.section1-text {
-  position: absolute;
-  text-align: center;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-  font-weight: 900;
-  padding-bottom: 5em;
-}
-
-.about-description {
-  font-family: 'Roboto',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-  font-weight: 10;
-  font-size: 1.5em;
-  text-align: justify;
-  padding: 20%;
-  padding-top: 0em;
-  padding-bottom: 0em;
-}
-
-.title-text {
-  font-family: 'Roboto',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-  font-weight: 800;
-  font-size: 80px;
-  margin-bottom: 0px;
-}
-
-.title-subtext {
-  font-family: 'Roboto',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-  font-weight: 10;
-  font-size: 1.5em;
-  margin-bottom: 0px;
-}
-
-.section-header {
-  font-family: 'Roboto',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-  font-weight: 800;
-  font-size: 3em;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-.projects-column {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.text-section {
-  padding: 2em;
-}
-
-.section-subtext {
-  font-family: 'Roboto',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif;
-  font-weight: 900;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.project-section {
-  padding-left: 16em;
-  padding-right: 16em;
-}
-
-.particles {
-  height: 100%;
-  width: 100%;
-}
-
-.content-center {
-  text-align: center;
-}
-

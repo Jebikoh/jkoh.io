@@ -75,7 +75,7 @@ function App() {
         <Affix>
           <Layout.Header className="nav">
             <div className="logo">
-              <p>JEBIKOH</p>
+              <p>JAYDEN</p>
             </div>
             <Menu theme="dark" mode="horizontal">
               <Menu.Item style={{float: 'right'}} key="1">
@@ -108,7 +108,7 @@ function App() {
           <div className="section1-text">
             <p className="title-text">HEY, I&apos;M JAYDEN.</p>
             <p className="title-subtext">
-              You might have seen me as &quot;Jebikoh&quot;
+              Subtext
             </p>
             <ChevronContainer
               data-aos="fade-up"

@@ -107,9 +107,7 @@ function App() {
         <Layout.Content className="content">
           <div className="section1-text">
             <p className="title-text">HEY, I&apos;M JAYDEN.</p>
-            <p className="title-subtext">
-              Subtext
-            </p>
+            <p className="title-subtext">Custom template - WIP</p>
             <ChevronContainer
               data-aos="fade-up"
               data-aos-easing="ease"

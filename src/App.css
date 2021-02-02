@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
+.story-image {
+  width: 100px;
+  margin: 20px;
+}
+
+.story-image-long {
+  width: 100px;
+  margin: 0px;
+}
+
+.arrow-column {
+  margin: auto;
+}
+
+.arrow {
+  width: 50px;
+  margin: 5px;
+}
+
+.section1 {
+  position: absolute;
+}
+
+.particles {
+  height: 100%;
+  width: 100%;
+}
 .header-text {
   font-family: 'Roboto';
   font-weight: 900;

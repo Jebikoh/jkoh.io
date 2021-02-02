@@ -9,11 +9,18 @@ import styled, {keyframes} from 'styled-components';
 import { Col, Container, Row } from 'react-bootstrap';
 import Iframe from 'react-iframe';
 import { Helmet } from 'react-helmet';
+import Particles from 'react-tsparticles';
 
 // Images
 import secure from './assets/secure.png';
 import thirdParty from './assets/third-party.png';
 import traceable from './assets/traceable.png';
+import arrow from './assets/arrow.png';
+import block from './assets/block.png';
+import list from './assets/list.png';
+import network from './assets/network.png';
+import transaction from './assets/transaction.png';
+import verify from './assets/verify.png';
 
 import bitcoinLogo from './assets/bitcoin.png';
 import ethereumLogo from './assets/ethereum.png';
@@ -97,9 +104,9 @@ function App() {
               </div>
               <Container className="image-container">
                   <Row>
-                    <Col><img src={bitcoinLogo} style={{"width": "100px"}} className="hvr-icon-bob"/></Col>
-                    <Col><img src={ethereumLogo} style={{"width": "100px"}}/></Col>
-                    <Col><img src={rippleLogo} style={{"width": "100px"}}/></Col>
+                    <Col><a href="https://bitcoin.org/en/"><img src={bitcoinLogo} style={{"width": "100px"}} className="hvr-icon-bob"/></a></Col>
+                    <Col><a href="https://ethereum.org/en/"><img src={ethereumLogo} style={{"width": "100px"}}/></a></Col>
+                    <Col><a href="https://ripple.com/"><img src={rippleLogo} style={{"width": "100px"}}/></a></Col>
                   </Row>
                 </Container>
                 <ChevronContainer
@@ -114,6 +121,7 @@ function App() {
               <div className="text-container">
                 <p className="body-text">Think of <span style={{'color': '#3ac0ff'}}>blockchain</span> as a permanent, immutable <span style={{'color': '#3ac0ff'}}>list of transactions</span>.
                   <br />
+                  <img className="story-image" src={list}/>
                   <br />
                   <span style={{'color': '#d142f5'}}>Transactions</span> on this list are grouped together into <span style={{'color': '#d142f5'}}>blocks</span>.
                 </p>
@@ -130,6 +138,7 @@ function App() {
               <div className="text-container">
                 <p className="body-text">This <span style={{'color': '#3ac0ff'}}>list</span> is distributed to a network of thousands of <span style={{'color': '#ff427b'}}>interconnected computers</span>.
                 <br/>
+                <img className="story-image" src={network}/>
                 <br/>
                 Each computer is called a <span style={{'color': '#ff427b'}}>node</span>.
                 </p>
@@ -170,7 +179,7 @@ function App() {
                   Crazy right?
                   <br />
                   <br />
-                  Let's talk about what happens when someone tries to submit a <span style={{'color': '#3ac0ff'}}>transaction</span>
+                  Let's talk about what happens when someone tries to submit a <span style={{'color': '#3ac0ff'}}>transaction.</span>
                 </p>
               </div>
               <ChevronContainer
@@ -186,6 +195,13 @@ function App() {
                 <p className="body-text">
                   If two people want to make a <span style={{'color': '#3ac0ff'}}>transaction</span>, they request one from the <span style={{'color': '#ff427b'}}>network</span>.
                   <br />
+                  <Container>
+                    <Row>
+                      <Col><img className="story-image" src={transaction}/></Col>
+                      <Col className="arrow-column"><img className="arrow" src={arrow}/></Col>
+                      <Col><img className="story-image" src={network}/></Col>
+                    </Row>
+                  </Container>
                   <br />
                   The request is broadcasted to <span style={{'color': '#ff427b'}}>every single node</span>.
                 </p>
@@ -203,8 +219,9 @@ function App() {
                 <p className="body-text">
                   Collectively, the <span style={{'color': '#ff427b'}}>network</span> verifies the transaction via complex algorithms.
                   <br />
+                  <img src={verify} className="story-image" />
                   <br />
-                  Any disagreement is settled by a minimum 51% majority.
+                  Any disagreement is settled by a 51% majority.
                 </p>
               </div>
               <ChevronContainer
@@ -218,8 +235,17 @@ function App() {
             <div className="section">
               <div className="text-container">
                 <p className="body-text">
-                  If successful, the <span style={{'color': '#3ac0ff'}}>transaction</span> is packed with others into a <span style={{'color': '#d142f5'}}>block</span>
+                  If successful, the <span style={{'color': '#3ac0ff'}}>transaction</span> is packed with others into a <span style={{'color': '#d142f5'}}>block.</span>
                   <br />
+                  <Container>
+                    <Row>
+                      <Col><img className="story-image-long" src={transaction}/></Col>
+                      <Col className="arrow-column"><img className="arrow" src={arrow}/></Col>
+                      <Col><img className="story-image-long" src={block}/></Col>
+                      <Col className="arrow-column-long"><img className="arrow" src={arrow}/></Col>
+                      <Col><img className="story-image-long" src={list} /></Col>
+                    </Row>
+                  </Container>
                   <br />
                   This <span style={{'color': '#d142f5'}}>block</span> is then added to the <span style={{'color': '#3ac0ff'}}>list</span>, and all <span style={{'color': '#ff427b'}}>nodes</span> update.
                 </p>
@@ -273,6 +299,25 @@ function App() {
                   </Col>
                 </Row>
               </Container>
+              <ChevronContainer
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-delay="1200"
+              >
+                <Chevron />
+              </ChevronContainer>
+            </div>
+            <div className="section">
+              <div className="text-container">
+                <p className="body-text">
+                  Sources & More Research:
+                  <br />
+                  <br />
+                  <a href="www.investopedia.com/terms/b/blockchain.asp">Investopedia</a>
+                  <br />
+                  <a href="www.altcointradingsignal.com/understanding-blockchain-technology-2018-infographic/">Altcoin Trading Signal</a>
+                </p>
+              </div>
             </div>
           </ReactFullpage.Wrapper>
         </>
